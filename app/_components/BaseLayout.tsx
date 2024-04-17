@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { ShrinkingHeader } from "./ShrinkingHeader";
-import { useEffect, useRef } from "react";
+import { ThemeProvider } from "@/components/theme-provider";
+import LightToggle from "./LightToggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,34 +15,42 @@ type Props = {
 
 export const BaseLayout = ({ children }: Props) => {
   return (
-    <body className={`${inter.className} min-h-screen bg-white`}>
-      <ShrinkingHeader>
-        <Link className="border-b-0 text-2xl font-bold" href="/">
-          Scott{" "}
-          <Image
-            className="p-0 m-0 inline"
-            src="/favicon-32x32.png"
-            alt="W"
-            height={32}
-            width={32}
-          />
-          eaver
-        </Link>
-        <div>
-          <Link
-            className="text-base border-b-0 font-medium hover:text-gray-300 px-4"
-            href="/blog/"
-          >
-            Blog
+    <body className={`${inter.className} min-h-screen bg-white dark:bg-black`}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <ShrinkingHeader>
+          <Link className="border-b-0 text-2xl font-bold" href="/">
+            Scott{" "}
+            <Image
+              className="p-0 m-0 inline"
+              src="/favicon-32x32.png"
+              alt="W"
+              height={32}
+              width={32}
+            />
+            eaver
           </Link>
-        </div>
-      </ShrinkingHeader>
+          <div>
+            <Link
+              className="text-base border-b-0 font-medium hover:text-gray-300 px-4"
+              href="/blog/"
+            >
+              Blog
+            </Link>
+            <LightToggle />
+          </div>
+        </ShrinkingHeader>
 
-      {children}
+        {children}
 
-      <footer className="bg-blue-900 text-center text-white py-4">
-        <p>Scott Weaver © 2024</p>
-      </footer>
+        <footer className="bg-blue-900 text-center text-white py-4 dark:bg-black dark:text-yellow-300">
+          <p>Scott Weaver © 2024</p>
+        </footer>
+      </ThemeProvider>
     </body>
   );
 };
