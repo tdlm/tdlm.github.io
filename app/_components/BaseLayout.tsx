@@ -47,8 +47,8 @@ export const BaseLayout = ({ children }: Props) => {
 
         {children}
 
-        <footer className="bg-blue-900 text-center text-white py-4 dark:bg-black dark:text-yellow-300">
-          <p>Scott Weaver © 2024</p>
+        <footer className="bg-white text-center text-black py-4 dark:bg-black dark:text-white">
+          <p>✨ Scott Weaver &copy; 2024 ✨</p>
         </footer>
       </ThemeProvider>
     </body>
