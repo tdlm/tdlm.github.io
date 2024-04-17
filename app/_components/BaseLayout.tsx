@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import { ShrinkingHeader } from "./ShrinkingHeader";
 import { ThemeProvider } from "@/components/theme-provider";
 import LightToggle from "./LightToggle";
 
-const inter = Inter({ subsets: ["latin"] });
+const mono = Roboto_Mono({ subsets: ["latin"] });
 
 type Props = {
   children?: React.ReactNode;
@@ -15,7 +15,7 @@ type Props = {
 
 export const BaseLayout = ({ children }: Props) => {
   return (
-    <body className={`${inter.className} min-h-screen bg-white dark:bg-black`}>
+    <body className={`${mono.className} min-h-screen bg-white dark:bg-black`}>
       <ThemeProvider
         attribute="class"
         defaultTheme="system"
