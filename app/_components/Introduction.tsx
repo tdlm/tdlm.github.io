@@ -1,6 +1,11 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 type Props = {
   className?: string;
@@ -68,8 +73,8 @@ export const Introduction = ({ className = "" }: Props) => {
           </p>
           <p>
             Although I work primarily with PHP/React in WordPress, I've also
-            worked with a variety of other languages: Python, Ruby, Perl, Bash
-            and others. I love{" "}
+            worked with a variety of other languages -- Python, Ruby and Bash to
+            name a few. I love{" "}
             <Link
               href="https://www.typescriptlang.org"
               rel="nofollow"
@@ -90,8 +95,39 @@ export const Introduction = ({ className = "" }: Props) => {
             California.
           </p>
           <p>
-            In my spare time, I like to code, build things, produce videos and
-            even play video games.
+            In my spare time, I like to{" "}
+            <Popover>
+              <PopoverTrigger className="border-b border-dashed">
+                code
+              </PopoverTrigger>
+              <PopoverContent>
+                💻 I love to code. I've been coding since I was ten years old. I
+                started with BASIC on a TRS-80. When I was twelve, I learned
+                HTML. When I was fifteen, I learned Perl. When I was sixteen, I
+                learned PHP. I've been coding ever since.
+              </PopoverContent>
+            </Popover>
+            , build things, produce videos and even play{" "}
+            <Popover>
+              <PopoverTrigger className="border-b border-dashed">
+                video games
+              </PopoverTrigger>
+              <PopoverContent>
+                🎮 I'm a casual gamer. I play on the Mac primarily, but
+                sometimes also Xbox or Meta. I enjoy games like Borderlands 2,
+                Minecraft, Half-Life 2, Half-Life, Portal and more. Check me out
+                on{" "}
+                <Link
+                  href="https://steamcommunity.com/id/tdlm/"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  Steam
+                </Link>
+                .
+              </PopoverContent>
+            </Popover>
+            .
           </p>
         </section>
       </TabsContent>
