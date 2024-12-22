@@ -31,18 +31,9 @@ export const Introduction = ({ className = "" }: Props) => {
       <TabsContent className="" value="short">
         <section className="flex flex-col gap-4 pt-4">
           <p>
-            Hi there! My name is Scott. I'm a Full Stack Engineer at CTI,
-            building{" "}
-            <Link
-              href="https://www.gobankingrates.com"
-              rel="nofollow"
-              target="_blank"
-            >
-              GOBankingRates.com
-            </Link>
-            . I enjoy working with a variety of technologies and languages, but
-            most of all I enjoy working with Next.js/React and WordPress. In
-            fact,{" "}
+            Hi there! My name is Scott. I'm a Full Stack Engineer. I enjoy
+            working with a variety of technologies and languages, but most of
+            all I enjoy working with Next.js/React and WordPress. In fact,{" "}
             <Link
               href="https://github.com/tdlm/tdlm.github.io"
               rel="nofollow"
@@ -88,6 +79,15 @@ export const Introduction = ({ className = "" }: Props) => {
             </Link>
             . I've worked with various database systems in addition to MySQL,
             such as Postgres, MongoDB, Redis and Memcached.
+          </p>
+          <p>
+            When I'm not working, I run a YouTube channel called <Link
+              href="https://youtube.com/@seescottdev"
+              rel="nofollow"
+              target="_blank"
+            >
+              @SeeScottDev
+            </Link> where I make videos about technology and software development.
           </p>
           <p>
             I am also a happily-married husband, dad to three cool kids and we

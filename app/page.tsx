@@ -21,8 +21,8 @@ export default function Home() {
         >
           github
         </Link>
-        <Link href="https://twitter.com/turtleofdeath" target="_blank">
-          twitter
+        <Link href="https://youtube.com/@seescottdev" target="_blank">
+          youtube
         </Link>
         <Link
           className="border-b-red-600"
@@ -30,14 +30,17 @@ export default function Home() {
         >
           linkedin
         </Link>
-        <Link className="border-b-green-600" href="/blog">
-          blog
-        </Link>
         <Link
           href="http://stackexchange.com/users/1098787/tdlm?tab=accounts"
           target="_blank"
         >
           stack exchange
+        </Link>
+        <Link
+          href="https://bsky.app/profile/seescottdev.bsky.social"
+          target="_blank"
+        >
+          blue sky
         </Link>
       </section>
 
