@@ -25,12 +25,6 @@ export default function Home() {
           youtube
         </Link>
         <Link
-          className="border-b-red-600"
-          href="https://www.linkedin.com/in/scottmw"
-        >
-          linkedin
-        </Link>
-        <Link
           href="http://stackexchange.com/users/1098787/tdlm?tab=accounts"
           target="_blank"
         >
