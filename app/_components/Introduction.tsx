@@ -49,18 +49,11 @@ export const Introduction = ({ className = "" }: Props) => {
       <TabsContent className="" value="long">
         <section className="flex flex-col gap-4 pt-4">
           <p>
-            Hello! My name is Scott. I'm a Full Stack Software Engineer working
-            at ConsumerTrack, focused primarily on building{" "}
-            <Link
-              href="https://www.gobankingrates.com"
-              rel="nofollow"
-              target="_blank"
-            >
-              GOBankingRates.com
-            </Link>
-            , a financial news website built on WordPress. Additionally, I've
-            worked at ShareThis, Disney, USA Today, Human Made, Vocativ,
-            Deloitte and Ray-ban.
+            Hello! My name is Scott. I'm a Full Stack Software Engineer
+            focused primarily on building sites using Next.js, WordPress,
+            and React. Additionally, I've worked at GOBankingRates,
+            ShareThis, Disney, USA Today, Human Made, Vocativ, Deloitte
+            and Ray-ban.
           </p>
           <p>
             Although I work primarily with PHP/React in WordPress, I've also
