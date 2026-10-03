@@ -39,6 +39,20 @@ export default function Home() {
       </section>
 
       <Introduction className="mb-12" />
+
+      <PageSection title={{ text: "Things I've made" }}>
+        <ul className="flex flex-col gap-4 pt-2">
+          <li>
+            <Link className="font-semibold" href="https://tdlm.github.io/hatch/">
+              Hatch
+            </Link>
+            <p className="pt-1 text-gray-600 dark:text-gray-400">
+              A cozy post-apocalyptic bunker incremental game. Play it in your
+              browser.
+            </p>
+          </li>
+        </ul>
+      </PageSection>
     </main>
   );
 }
