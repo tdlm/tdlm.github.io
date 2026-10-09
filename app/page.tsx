@@ -51,6 +51,18 @@ export default function Home() {
               browser.
             </p>
           </li>
+          <li>
+            <Link
+              className="font-semibold"
+              href="https://tdlm.github.io/winterkill/"
+            >
+              Winterkill
+            </Link>
+            <p className="pt-1 text-gray-600 dark:text-gray-400">
+              A first-person winter survival and hunting game in a snowy
+              valley. Play it in your browser.
+            </p>
+          </li>
         </ul>
       </PageSection>
     </main>
